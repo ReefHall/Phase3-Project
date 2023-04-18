@@ -1,3 +1,5 @@
+import time, os
+from time import sleep
 #1:
 robot1 = """    0 
            X_____\\
@@ -71,7 +73,6 @@ robot3 = """  ____          ____
  <_>      |=\__/=|      <_>
  <_>      |------|      <_>
  | |   ___|======|___   | |
-//\\  / |O|======|O| \  //\\
 |  |  | |O+------+O| |  |  |
 |\/|  \_+/        \+_/  |\/|
 \__/  _|||        |||_  \__/
@@ -86,7 +87,21 @@ robot3 = """  ____          ____
   /___n_n___\  /___n_n___\\
 """
 
-robot1_red = ""
-robot1_blue = ""
-robot1_green = ""
-   
+robot1_red = f"\033[91m{robot1}\033[00m"
+robot1_blue = f"\033[96m{robot1}\033[00m"
+robot1_green = f"\033[92m{robot1}\033[00m"
+
+robot3_red = f"\033[91m{robot3}\033[00m"
+robot3_blue = f"\033[96m{robot3}\033[00m"
+robot3_green = f"\033[92m{robot3}\033[00m"
+
+print(robot1_red)
+print(robot1_blue)
+print(robot1_green)
+sleep(4)
+os.system('clear')
+
+print(robot3_red)
+print(robot3_blue)
+print(robot3_green)
+
