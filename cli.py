@@ -1,7 +1,7 @@
 import time
 import os
 from time import sleep
-from lib.models.robot_designs import robot1, robot2, robot3
+from lib.models.robot_designs import robot1, robot2, robot3, robot1_red, robot1_blue, robot1_green, robot2_red, robot2_blue, robot2_green, robot3_red, robot3_blue, robot3_green
 from lib.models.robot_story_opening import intro, header_one
 
 class Robot:
@@ -56,5 +56,4 @@ elif(robo == '3'):
     print(a)
 else:
     print("You entered wrong number")
-
 
