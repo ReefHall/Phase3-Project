@@ -23,7 +23,7 @@ robot1 = """    0
        ||__ |   | __||
       [|'  `|] [|'  `|]
       [|`--'|] [|`--'|]
-      /|__| |\ /| |__|\\
+      /|__| |\ /| |__|\
       ||  | || || |  ||
       ||__|_|| ||_|__||
       ||    || ||    ||
@@ -35,7 +35,8 @@ robot1 = """    0
       
 
 #2: 
-robot2 = """        |_|_|
+robot2 = """                
+          |_|_|
           |_|_|              _____
           |_|_|     ____    |*_*_*|
  _______   _\__\___/ __ \____|_|_   _______
@@ -87,21 +88,20 @@ robot3 = """  ____          ____
   /___n_n___\  /___n_n___\\
 """
 
-robot1_red = f"\033[91m{robot1}\033[00m"
-robot1_blue = f"\033[96m{robot1}\033[00m"
-robot1_green = f"\033[92m{robot1}\033[00m"
 
-robot3_red = f"\033[91m{robot3}\033[00m"
-robot3_blue = f"\033[96m{robot3}\033[00m"
-robot3_green = f"\033[92m{robot3}\033[00m"
 
-print(robot1_red)
-print(robot1_blue)
-print(robot1_green)
-sleep(4)
-os.system('clear')
+robot1_red = f"\33[91m{robot1}\33[00m"
+robot1_blue = f"\33[96m{robot1}\33[00m"
+robot1_green = f"\33[92m{robot1}\33[00m"
 
-print(robot3_red)
-print(robot3_blue)
-print(robot3_green)
+
+robot2_red = f"\33[91m{robot2}\33[00m"
+robot2_blue = f"\33[94m{robot2}\33[00m"
+robot2_green = f"\33[92m{robot2}\33[00m"
+
+robot3_red = f"\33[91m{robot3}\33[00m"
+robot3_blue = f"\33[94m{robot3}\33[00m"
+robot3_green = f"\33[92m{robot3}\33[00m"
+
+
 

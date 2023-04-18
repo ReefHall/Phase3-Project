@@ -1,7 +1,7 @@
 import time 
 
 # Define the ASCII header
-header_one = """"\033[96md
+header_one = """"\033[96md 
 
 
              888888b db   db d88888b      d8888b. d88888b db    db  .d88b.  db      db    db d888888b d888888b  .d88b.  d8b   db  .d8b.  d8888b. db    db      d8888b.  .d88b.  d8888b.  .d88b.  d888888b 
