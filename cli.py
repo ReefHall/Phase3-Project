@@ -1,6 +1,5 @@
 import pyfiglet as pyg   
 import time
-import pyfiglet 
 import os
 from time import sleep
 from lib.models.robot_designs import robot1, robot2, robot3, robot1_red, robot1_blue, robot1_green, robot2_red, robot2_blue, robot2_green, robot3_red, robot3_blue, robot3_green
