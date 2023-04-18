@@ -41,23 +41,12 @@ intro = """\033[1m\033[33m
 \033[0m"""
 
 
-# prompt the user to begin
-def animate_text(text):
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(0.02)
+# #prompt the user to begin
+# def animate_text(text):
+#     for char in text:
+#         print(char, end='', flush=True)
+#         time.sleep(0.02)
 
-begin = input("Are you ready to begin? (y/n): ")
-if begin.lower() == 'y':
-    time.sleep(2)
-    # Print the ASCII header
-    print(header_one)
-    time.sleep(2) # Wait for 1 second before printing the intro text
-    # Print the intro text
-    for line in intro.split("\n"):
-        print(line)
-        time.sleep(2) # Wait for 0.2 seconds before printing the next line
-else:
-    print("Okay, see you later!")
+
     
 
