@@ -17,7 +17,7 @@ Eventually, news of your robot's incredible abilities and charming personality b
 You begin to mass-produce your robot, offering it to people in all corners of the globe. With each new robot that rolls off the assembly line, you feel a sense of joy and fulfillment, knowing that you're making a difference in the world. And as your robots spread out and begin to solve some of the world's biggest problems, you know that you've created something extraordinary.
 Ultimately, you look back on your journey with pride and satisfaction, knowing you've accomplished something incredible. And as you look at your robot, now surrounded by dozens of its brothers and sisters, you know that your creation will continue to make the world a better place for generations."""
 
-good_end = """//
+good_end = """
 __/\\\\\\\\\\\\\\\__/\\\___________________________________/\\\\\\\\\\\\\\\_______________________/\\\__        
  _\///////\\\/////__\/\\\__________________________________\/\\\///////////_______________________\/\\\__       
   _______\/\\\_______\/\\\__________________________________\/\\\__________________________________\/\\\__      
