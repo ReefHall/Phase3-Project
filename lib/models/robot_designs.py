@@ -1,3 +1,5 @@
+import time, os
+from time import sleep
 #1:
 robot1 = """    0 
            X_____\\
@@ -87,6 +89,7 @@ robot3 = """  ____          ____
 """
 
 
+
 robot1_red = f"\33[91m{robot1}\33[00m"
 robot1_blue = f"\33[96m{robot1}\33[00m"
 robot1_green = f"\33[92m{robot1}\33[00m"
@@ -99,5 +102,6 @@ robot2_green = f"\33[92m{robot2}\33[00m"
 robot3_red = f"\33[91m{robot3}\33[00m"
 robot3_blue = f"\33[94m{robot3}\33[00m"
 robot3_green = f"\33[92m{robot3}\33[00m"
+
 
 
