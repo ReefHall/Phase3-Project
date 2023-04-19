@@ -4,20 +4,25 @@ import os
 from time import sleep
 from lib.models.robot_designs import robot1, robot2, robot3, robot1_red, robot1_blue, robot1_green, robot2_red, robot2_blue, robot2_green, robot3_red, robot3_blue, robot3_green
 from lib.models.robot_story_opening import intro, header_one
+from lib.models.evil_robot_ending import evil_robot_ending, evil_end
+from lib.models.good_robot_ending import good_robot_ending, good_end
 from lib.models.good_animal_design import cat, dog, elephant
 from lib.models.evil_animal_design import spider, bat, wolf 
+from lib.models.evil_enhancement import hulk, smart, jokes
+from lib.models.good_enhancement import intelligence, physical, social
 
 class Robot:
-    def __init__(self, name="", color=None, animal=None, behavior=None, ascii="", id=0):
+    def __init__(self, name="", color=None, animal=None, behavior=None, enhancement=None, ascii="", id=None):
         self.name = name
         self.color = color
         self.animal = animal
         self.behavior = behavior
-        self.ascii = ''
+        self.enhancement = enhancement
+        self.ascii = ascii
         self.id = id
 
     def __repr__(self):
-        return f"{self.ascii}\nI am {self.name}, your robot. My color is {self.color}, I am {self.behavior} and I morph into a {self.animal}"
+        return f"{self.ascii}\nI am {self.name}, your robot. My color is {self.color} and I am {self.behavior}. I morph into a {self.animal} and I am {self.enhancement}."
     
 begin = input("Are you ready to begin? (y/n): ")
 if begin.lower() == 'y':
@@ -60,7 +65,6 @@ while(a.ascii == ""):
     else:
         print("You entered wrong number")
 
-print("Great! You chose your robots design in a jiffy! Now, let's move on to the next step.\n")
 print("\33[1m\033[33mInitially, you made your robot’s exterior sleek and metallic looking. The metallic was excellent, but you thought you’d push yourself further.\033[0m\n")
 print("You decided to change the metallic color to: \n1.\33[96mBlue\33[00m\n2.\33[91mRed\33[00m\n3.\33[92mGreen\33[00m\n")
 while(a.color == None):
@@ -86,7 +90,7 @@ if(a.ascii == robot2 and a.color == "Red"):
 elif(a.ascii == robot2 and a.color == "Blue"):
     a.ascii = robot2_blue
 elif(a.ascii == robot2 and a.color == "Green"):
-    a.ascii = robot1_green
+    a.ascii = robot2_green
 
 if(a.ascii == robot3 and a.color == "Red"):
     a.ascii = robot3_red
@@ -123,6 +127,7 @@ choice = input("Enter 'good' to create a robot that will help humanity, or 'evil
 
 
 if choice == "good":
+    a.behavior = "GOOD"
     ascii_good = pyg.figlet_format("Good", font= 'isometric1')
     print(f'1. \033[98m{ascii_good}\033[00m')
     # continue with the 'good' storyline 
@@ -148,18 +153,44 @@ if choice == "good":
     print(f"You have chosen a,{a.animal},to be the form of your robot's shapeshifting ability.")
     sleep(2)
 
-    print(f"You focus on enhancing its intelligence, its physical capabilities, or its social skills.'")
+    print(f"In order to ensure  your robot is able to accomplish your plan to make the world a better place to exist in, you need to give it a skill that will help it accomplish its goals.\n")
+    sleep(2)
+    while(a.enhancement == None):
+            robot_enhancement = input(f"""Which enhancement do you chose {a.name}?
+
+    1. Intelligence - your robot will be able to analyze complex data and identify patterns that could lead to breakthroughs in scientific research
+
+    2. Physical: your robot can perform tasks that require significant strength or speed, such as disaster relief or construction work.
+
+    3. Social: your robot will be able to interact with people in a way that makes them feel understood and supported and give them a good laugh in their day. 
+
+    """)
+            if robot_enhancement == "1":
+                a.enhancement = "Intelligent"
+                print(intelligence)
+            elif robot_enhancement == "2":
+                a.enhancement = "Strong"
+                print(physical)
+            elif robot_enhancement == "3":
+                a.enhancement = "Funny"
+                print(social)
+            else:
+                print("Enter a valid number")
 
 
-
-
+    print(good_robot_ending)
+    sleep(3)
+    print(f"Congratulations! You have created {a}. Thanks for playing!")
+    sleep(3)
+    input("PRESS ENTER TO END GAME ")
+    print(good_end)
 
 elif choice == "evil":
+    a.behavior = "EVIL"
     ascii_evil = pyg.figlet_format("Evil", font = 'isometric3')
     print(f'2. \033[91m{ascii_evil}\033[00m')
     # continue with the 'evil' storyline
     print("""As your robot comes to life, Its movements are jerky and unpredictable, and its voice has an eerie tone. you realize that before you can implement your plan of taking over the world with your robot companion, you need to customize your robot a bit more. How cool would it be if {a.name} could morph into a scary animal?""")
-    
     print("""What animal would you choose to morph into?\n""")
     while(a.animal == None):
         robot_animal = input(f"Choose the animal you’d like,{a.name}, to shapeshift into:\n1. Wolf\n2. Spider\n3. Bat\n ")
@@ -174,9 +205,28 @@ elif choice == "evil":
             print(bat)
         else:
             print("Enter a valid animal")
-
     print(f"You have chosen a,{a.animal}, to be the form of your robot's shapeshifting ability.")
-
-else:
-    print("Invalid choice. Please try again.")
-    # ask the user to make a valid choice and restart the process
+    print(f"""
+    It occurred to you that the only way you can reach your goal of taking over the world with your robot is to optimize a feature to make it even more powerful and deadly.
+    You have three options:\n """)
+    print(f"Which Enhancement do you choose for {a.name}?\n")
+    while(a.enhancement == None):
+        robot_enhancement = input(f"""
+1.Enhanced Strength - this feature will give your robot immense physical power, allowing it to crush anything in its path.
+2.Advanced Intelligence - this feature will make your robot incredibly smart and strategic, allowing it to out-think and outmaneuver any human opponent.
+3.Tactical Weapon - this feature will give your robot a variety of deadly weapons, not limited to missiles, bombs, and laser guns, but also insanely corny jokes.\n """)
+        if(robot_enhancement == '1'):
+            print(hulk)
+            a.enhancement ="Strong"
+        elif(robot_enhancement == '2'):
+            print(smart)
+            a.enhancement = "Intelligent"
+        elif(robot_enhancement == '3'):
+            print(jokes)
+            a.enhancement = "Funny"
+        else:
+            print("Enter a valid number")
+    print(evil_robot_ending)
+    print(f"Congratulations! You have created {a}. Thanks for playing!")
+    input("PRESS ENTER TO END GAME ")
+    print(evil_end)
