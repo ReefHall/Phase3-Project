@@ -148,7 +148,7 @@ if choice == "good":
     print(f"You have chosen a,{a.animal},to be the form of your robot's shapeshifting ability.")
     sleep(2)
 
-    print(f'"You focus on enhancing its intelligence, its physical capabilities, or its social skills.'")
+    print(f"You focus on enhancing its intelligence, its physical capabilities, or its social skills.'")
 
 
 
