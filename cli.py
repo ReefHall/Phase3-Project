@@ -4,9 +4,10 @@ import os
 from time import sleep
 from lib.models.robot_designs import robot1, robot2, robot3, robot1_red, robot1_blue, robot1_green, robot2_red, robot2_blue, robot2_green, robot3_red, robot3_blue, robot3_green
 from lib.models.robot_story_opening import intro, header_one
+from lib.models.evil_animal_design import bat, spider, wolf
 
 class Robot:
-    def __init__(self, name="", color="", animal="", behavior=None, id=None, ascii=""):
+    def __init__(self, name="", color= None, animal=None, behavior=None, id=None, ascii=""):
         self.name = name
         self.color = color
         self.animal = animal
@@ -26,8 +27,8 @@ if begin.lower() == 'y':
     # Print the intro text
     for line in intro.split("\n"):
         print(line)
-        time.sleep(1
-                ) # Wait for 0.2 seconds before printing the next line
+        time.sleep(1)
+                 # Wait for 0.2 seconds before printing the next line
 else:
     print("Okay, see you later!")
 input("PRESS ANY KEY TO CONTINUE ")
@@ -63,7 +64,7 @@ while(a.color == None):
     if(robo_color == '1'):
          a.color = "Blue"
     elif(robo_color == '2'):
-         a.color == "Red"
+         a.color = "Red"
     elif(robo_color == '3'):
          a.color = "Green"
     else:
@@ -90,7 +91,6 @@ elif(a.ascii == robot3 and a.color == "Blue"):
 elif(a.ascii == robot3 and a.color == "Green"):
     a.ascii = robot3_green
 
-print(a)
 
 
 
@@ -113,5 +113,54 @@ a.name = name
 
 print(f"Hi, my name is {a.name}.")
 print(f"{a.ascii}")
+
+
+print("""
+                        Lastly, before your robot comes to life, you have one more big decision. The robot is not inherently good or evil - 
+                        It's actions and agenda will be determined by the programming you give it. 
+                        Will you create a robot that will help humanity, or will you create one that will seek to dominate the world?
+                        The choice is yours….
+
+""")
+    
+ascii_good = pyg.figlet_format("Good", font= 'isometric1')
+ascii_evil = pyg.figlet_format("Evil", font = 'isometric3')
+
+print(f'1. \033[98m{ascii_good}\033[00m\n2. \033[91m{ascii_evil}\033[00m\n ')
+
+robot_behavior = input("1 or 2? ")
+
+if(robot_behavior == "1"):
+    pass
+elif(robot_behavior == "2"):
+    a.behavior = "Evil"
+    print(f"""
+                                                As your robot comes to life, Its movements are jerky and unpredictable, and its voice has an eerie tone. 
+                                                you realize that before you can implement your plan of taking over the world with your robot companion, you need to customize your robot a bit more.
+                                                How cool would it be if {a.name} could morph into a scary animal?""")
+    sleep(1.5)
+    print(""" 
+                                                    What animal would you choose to morph into?\n
+
+""")
+      
+    print("1.Wolf\n2.Spider\n3.Bat\n")
+    while(a.animal == None):  
+        robot_animal = input("Which beast... ")
+        if(robot_animal == '1'):
+             a.animal = "Wolf"
+             print(wolf)
+        elif(robot_animal == '2'):
+            a.animal = "Spider"
+            print(spider)
+        elif(robot_animal == '3'):
+            a.animal = "Bat"
+            print(bat)
+        else:
+            print("Enter a valid animal")
+
+
+
+    
 
 

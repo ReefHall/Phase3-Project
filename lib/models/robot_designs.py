@@ -109,10 +109,10 @@ robot3_blue = f"\33[96m{robot3}\33[00m"
 robot3_green = f"\33[92m{robot3}\33[00m"
 
 
-print(robot1_red)
-print(robot2_green)
-print(robot3_blue)
-print(robot1_blue)
+# print(robot1_red)
+# print(robot2_green)
+# print(robot3_blue)
+# print(robot1_blue)
 
 
 
