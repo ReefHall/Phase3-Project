@@ -10,21 +10,8 @@ from lib.models.good_animal_design import cat, dog, elephant
 from lib.models.evil_animal_design import spider, bat, wolf 
 from lib.models.evil_enhancement import hulk, smart, jokes
 from lib.models.good_enhancement import intelligence, physical, social
+from lib.models.robot import Robot
 
-class Robot:
-    def __init__(self, name="", color=None, animal=None, behavior=None, enhancement=None, ascii="", id=None):
-        self.name = name
-        self.color = color
-        self.animal = animal
-        self.behavior = behavior
-        self.enhancement = enhancement
-        self.ascii = ascii
-        self.id = id
-        self.enhancement = None
-
-    def __repr__(self):
-        return f"{self.ascii}\nI am {self.name}, your robot. My color is {self.color} and I am {self.behavior}. I morph into a {self.animal} and I am {self.enhancement}."
-    
 begin = input("Are you ready to begin? (y/n): ")
 if begin.lower() == 'y':
     time.sleep(.5)
@@ -180,37 +167,7 @@ if choice == "good":
 
 
 
-    print(f"In order to ensure  your robot is able to accomplish your plan to make the world a better place to exist in, you need to give it a skill that will help it accomplish its goals.\n")
-    sleep(2)
-    while(a.enhancement == None):
-            robot_enhancement = input(f"""Which enhancement do you chose {a.name}?
 
-    1. Intelligence - your robot will be able to analyze complex data and identify patterns that could lead to breakthroughs in scientific research
-
-    2. Physical: your robot can perform tasks that require significant strength or speed, such as disaster relief or construction work.
-
-    3. Social: your robot will be able to interact with people in a way that makes them feel understood and supported and give them a good laugh in their day. 
-
-    """)
-            if robot_enhancement == "1":
-                a.enhancement = "Intelligent"
-                print(intelligence)
-            elif robot_enhancement == "2":
-                a.enhancement = "Strong"
-                print(physical)
-            elif robot_enhancement == "3":
-                a.enhancement = "Funny"
-                print(social)
-            else:
-                print("Enter a valid number")
-
-
-    print(good_robot_ending)
-    sleep(3)
-    print(f"Congratulations! You have created {a}. Thanks for playing!")
-    sleep(3)
-    input("PRESS ENTER TO END GAME ")
-    print(good_end)
 
 elif choice == "evil":
     a.behavior = "EVIL"

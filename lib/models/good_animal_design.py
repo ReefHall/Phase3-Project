@@ -112,8 +112,8 @@ elephant ="""
                                                                                                    .odSS4PYYYSSOOXXXXXXXXXOodbgooo.
                                                                                                    /SSYod$$$$SSOIIPXXXXXXXXXYYP.oo.*b.
                                                                                                    ($$Yd$$$$SSSOII:XXXXXXXX:IIoSSS$$b.Y,
-                                                                                                   \Yd$$$$SSSOII:XXXXXXXXXX:IIOOSSS$$$b\
-                                                                                                   d$$$$SSSOOI:XP"YXXXXXXXX:IIOOSSSS$$$\
+                                                                                                   \Yd$$$$SSSOII:XXXXXXXXXX:IIOOSSS$$$b\\
+                                                                                                   d$$$$SSSOOI:XP"YXXXXXXXX:IIOOSSSS$$$\\
                                                                                                    Y$$$SSSOOII:XbdXXXXXP"YX:IIOOOSS$$$$)
                                                                                                    'Y$$$SSSOI:XXXXXXXXXbodX:IIOOSS$$$$$/
                                                                                                       "Y$$$SSSOI(PoTXXXXXTo)XXIIOOOSS$$$*'
