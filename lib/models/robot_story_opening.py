@@ -20,7 +20,7 @@ header_one = """"\033[36m
 # set the intro text with styles
 
 intro = """\033[1m\033[33m                                                              
-                                                                                        And so, you begin your journey...........
+                                                                                            And so, you begin your journey...
 
                                                                 As a curious and determined individual who has always been interested in technology.
 
@@ -30,7 +30,7 @@ intro = """\033[1m\033[33m
 
                                                                 And then, one day, you had an idea that was so revolutionary it took your breath away.
 
-                                                                                You would build a program that could bring a robot to life!
+                                                                                You would build a program that could bring a ROBOT to life!
 
                                                                                 Excited by the possibility, you set to work on the project.
 
