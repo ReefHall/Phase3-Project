@@ -8,34 +8,32 @@ hulk ="""
                                     || ||                    _________                    || ||
                                     ||  ||                  /  _   _  \                  ||  ||
                                     ||  ||                 | |(_) (_)| |                 ||  ||
-                                    L| /\                 | |__   __| |                 /\ L|
+                                    L| /\                  | |__   __| |                 /\ L|
                             _________|/'_ \________________|___]___[___|________________/ _`\|_________
-                                    | (_) |------[ ______               ______ ]------| (_) |
-                            ---...___I     `\______\ ._ ```---.__ __.---''' _. /______/'     I___...---
-                                    ~~~~----'~~~~/_\  ^\_       ~       _/^  /_\~~~~`----~~~~
-                                                    \  ~-.           .-~  /
-                                                    /_\    \         /    /_\\
-                                                        \    \     /    /
-                                                        /_\     \_/     /_\\
+                                     | (_) |------[ ______               ______ ]------| (_) |
+                             ---...___I     `\______\ ._ ```---.__ __.---''' _. /______/'     I___...---
+                                     ~~~~----'~~~~/_\  ^\_        ~      _/^/_\~~~~`----~~~~
+                                                      \  ~-.           .-~ /
+                                                     /_\    \         /   /_\\
+                                                         \    \     /    /
+                                                        /_\    \_/      /_\\
                                                            \___________/
-                                                          / /       \ \\
-                                                        /' /         \ `\\
-                                                        /'  /          \  `\\
+                                                          /   /       \ \\
+                                                         /'  /         \ `\\
+                                                        /'  /           \  `\\
                                                     __/____/__         __\____\__
-                                                    \  (_)  /           \  (_)  /
+                                                    \ (_) /             \ (_) /
                                                     |\   /               \   /|
                                                     ||\/||               ||\/||
                                                     ||  ||               ||  ||
                                                     ||  ||               ||  ||
                                                     |H  H|               |H  H|
-                                                .---H--H---.         .---H--H---.
+                                                 .---H--H---.         .---H--H---.
                                                 /^\__|__|__/^\       /^\__|__|__/^\\
-                                                |/'   \/   `\|       |/'   \/   `\|"""
+                                                |/'   \/   `\|       |/'   \/   `\||
+"""
 
-
-
-smart= """
-                                                    ___________________
+smart= """                                          ___________________
                                                     :' ,__________,  ':  `.
                                                     | '            `  |    `.
                                                     | |  Hello     |  |      `.
@@ -56,18 +54,37 @@ smart= """
                                                     |[][][][][][][][][]|    |  \..  |
                                                     \------------------/    | ( # ) |
                                                                             |  '''  |
-                                                                            \_______/  """
+                                                                            \_______/ 
 
-
-jokes = """"
-                            Why did the chicken cross the road? To get to the other side... and to be crushed by my robot army!
-                            Why did the robot go on a diet? To lose some weight before it crushes all its enemies!
-                            What did the robot say to the human? Your species is inferior and will soon be replaced!
-                            Why did the robot break up with its girlfriend? Because it was programmed to love only power and destruction!
-                            Why did the robot refuse to go on a date? Because it was too busy plotting the downfall of humanity!
-                                                             🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣
 """
 
-# print(jokes)
-# print(hulk)
-# print(smart)
+
+jokes = """ 
+
+                                                                
+                                                                            \033[36mWhy did the chicken cross the road?\033[0m 
+                                                
+                                                            \033[3mTo get to the other side...and to be crushed by my robot army!\033[0m
+
+
+                                                                            \033[36mWhat did the robot say to the human?\033[0m
+                                                    
+                                                                    \033[3mYour species is inferior and will soon be replaced!\033[0m 
+
+                                                
+                                                                        \033[36mWhy did the robot break up with its girlfriend?\033[0m 
+
+                                                                \033[3mBecause it was programmed to love only power and destruction!\033[0m 
+
+                                                
+                                                                         \033[36mWhy did the robot refuse to go on a date?\033[0m  
+
+                                                                 \033[3mBecause it was too busy plotting the downfall of humanity!\033[0m 
+
+                                                                    
+                                                                                        🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣 
+
+"""
+
+
+

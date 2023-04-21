@@ -100,7 +100,7 @@ elephant ="""
                                                                            ,adPPYba,  88  ,adPPYba, 8b,dPPYba,  88,dPPYba,  ,adPPYYba, 8b,dPPYba,    8c 
                                                                            a8P_____88 88 a8P_____88 88P'    "8a 88P'    "8a ""     `Y8 88P'   `"8a   88
                                                                            8PP""""""" 88 8PP""""""" 88       d8 88       88 ,adPPPPP88 88       88   88
-                                                                           "8b,   ,aa 88 "8b,   ,aa 88b,   ,a8" 88       88 88,    ,88 88       88   88        
+                                                                           "8b,   ,aa 88 "8b,   ,aa 88b,    ,a8"88       88 88,    ,88 88       88   88        
                                                                            "8b,   ,aa 88 "8b,   ,aa 88b,   ,a8" 88       88 88,    ,88 88       88   88
                                                                            ` "Ybbd8"' 88  `"Ybbd8"' 88`YbbdP"'  88       88 `"8bbdP"Y8 88       88   "Y88Y888 
                                                                                                    88                                              

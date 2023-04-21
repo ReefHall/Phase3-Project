@@ -56,17 +56,30 @@ physical = """
 #3
 social = """
 
-                                                                                        Why did the robot go on a diet? Because it had too many megabytes!
+                                                \033[1;34mWhy did the robot go on a diet?\033[0m
 
-                                                                                    What did one robot say to the other when they fell in love? I love you a bot!
-                                                                                    
-                                                                                    What do you call a robot that takes too many coffee breaks? Java the Hut!
-                                                                                    
-                                                                                    Why was the robot feeling depressed? It had a byte-sized existential crisis!
-                                                                                    
-                                                                                    How do robots communicate their love? They send each other RAM-antic messages!
+                                                \033[3;31mBecause it had too many megabytes!\033[0m
 
-                                                                                                            🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣
+
+                                    \033[1;34mWhat did one robot say to the other when they fell in love?\033[0m
+
+                                                         \033[3;31mI love you a bot!\033[0m
+
+
+                                    \033[1;34mWhat do you call a robot that takes too many coffee breaks?\033[0m
+
+                                                        \033[3;31mJava the Hut!\033[0m
+
+                                             \033[1;34mWhy was the robot feeling depressed?\033[0m
+
+                                            \033[3;31mIt had a byte-sized existential crisis!\033[0m    
+
+                                              \033[1;34mHow do robots communicate their love?\033[0m
+
+                                            \033[3;31mThey send each other RAM-antic messages!\033[0m
+
+                                                                        \U0001F602
+
 
 
 """
