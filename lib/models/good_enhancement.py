@@ -66,19 +66,11 @@ social = """
                                                          \033[3;31mI love you a bot!\033[0m
 
 
-                                    \033[1;34mWhat do you call a robot that takes too many coffee breaks?\033[0m
-
-                                                        \033[3;31mJava the Hut!\033[0m
-
-                                             \033[1;34mWhy was the robot feeling depressed?\033[0m
-
-                                            \033[3;31mIt had a byte-sized existential crisis!\033[0m    
-
                                               \033[1;34mHow do robots communicate their love?\033[0m
 
                                             \033[3;31mThey send each other RAM-antic messages!\033[0m
 
-                                                                        \U0001F602
+                                                                 \U0001F602
 
 
 

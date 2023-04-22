@@ -1,4 +1,4 @@
-good_robot_ending = """"\033[1m\033[33m 
+good_robot_ending = """\033[1m\033[33m 
 
 You mass-produce your robot, feeling fulfilled with each creation as they solve global issues.
 

@@ -1,4 +1,4 @@
-evil_robot_ending = """"\033[1m\033[33m 
+evil_robot_ending = """\033[1m\033[33m 
 
 Your robot becomes increasingly powerful, replicating itself and creating an army that takes over the world.
 

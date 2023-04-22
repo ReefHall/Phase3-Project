@@ -123,7 +123,7 @@ choice = input("Enter 'GOOD' to create a robot that will help humanity, or 'EVIL
 if choice == "GOOD":
     a.behavior = "GOOD"
     ascii_good = pyg.figlet_format("GOOD", font = 'isometric3')
-    print(f'2. \033[96m{ascii_good}\033[00m\n')
+    print(f'\033[96m{ascii_good}\033[00m\n')
     sleep(1)
     print("\033[33m\nYou spend hours pouring your heart into your code, carefully crafting the robot's programming.\033[0m\n")
     sleep(2)
@@ -132,7 +132,7 @@ if choice == "GOOD":
     print("\033[33m\nBefore your robot comes to life, you want to ensure that its programming is optimized for maximum effectiveness and has all the necessary features to accomplish its goals.\033[0m\n")
     sleep(2)
 
-    robot_animal = input(f"""\n\nChoose the animal you would like,{a.name}, to morph into:\n1. Cat\n2. Dog\n3. Elephant\n\n""")
+    robot_animal = input(f"""\n\nChoose the animal you would like {a.name}, to morph into:\n1. Cat\n2. Dog\n3. Elephant\n\n""")
     while(a.animal == None):
         if robot_animal == "1":
             a.animal = "Cat"
@@ -149,11 +149,11 @@ if choice == "GOOD":
     sleep(2)
     print(f"""\033[33m\nIn order to ensure  your robot is able to accomplish your plan to make the world a better place to exist in, you need to give it a skill that will help it accomplish its goals.\033[30m\n""")
     while(a.enhancement == None):
-            robot_enhancement = input(f"""\033[92mWhich enhancement do you chose for {a.name}?\n
-                1. Intelligence - your robot will be able to analyze complex data and identify patterns that could lead to breakthroughs in scientific research\n
-                2. Physical: your robot can perform tasks that require significant strength or speed, such as disaster relief or construction work.\n
-                3. Social: your robot will be able to interact with people in a way that makes them feel understood and supported and give them a good laugh in their day.\n
-                \033[0m""")
+            robot_enhancement = input(f"""\033[0mWhich enhancement do you chose for {a.name}?\n
+1. Intelligence - your robot will be able to analyze complex data and identify patterns that could lead to breakthroughs in scientific research\n
+2. Physical: your robot can perform tasks that require significant strength or speed, such as disaster relief or construction work.\n
+3. Social: your robot will be able to interact with people in a way that makes them feel understood and supported and give them a good laugh in their day.\n
+\033[0m""")
             if robot_enhancement == "1":
                 print(intelligence)
                 a.enhancement = "Intelligent"
@@ -165,9 +165,10 @@ if choice == "GOOD":
                 a.enhancement = "Funny"
             else:
                 print("Enter a valid number")
-
-    print(good_robot_ending)
-    sleep(3)
+    input("PRESS `ENTER` TO CONTINUE ")               
+    for line in good_robot_ending.split("\n"):
+        print(line)
+        sleep(1)
     print(f"""\033[33mCongratulations! You have created {a}\n\n""")
     sleep(2)
     print(f"""\033[33mThanks for attempting to save the world!😇\n\n""")
@@ -178,17 +179,17 @@ if choice == "GOOD":
 elif choice == "EVIL":
     a.behavior = "EVIL"
     ascii_evil = pyg.figlet_format("Evil", font = 'isometric3')
-    print(f'2. \033[91m{ascii_evil}\033[00m\n\n')
+    print(f'\033[91m{ascii_evil}\033[00m\n\n')
     # continue with the 'evil' storyline
     print(f"""\033[33mAs your robot comes to life, Its movements are jerky and unpredictable, and its voice has an eerie tone.
 
 you realize that before you can implement your plan of taking over the world with your robot companion, you need to customize your robot a bit more. 
 
-How cool would it be if {a.name} could morph into a scary animal?\n\n""")
+How cool would it be if {a.name} could morph into a scary animal?\33[0m\n\n""")
 
-    print(f"""\033[33mWhat animal would you choose for {a.name}?\n\n""")
+    print(f"""What animal would you choose for {a.name}?\n\n""")
     while(a.animal == None):
-        robot_animal = input(f"Choose the animal you’d like,{a.name}, to morph into:\n1. Wolf\n2. Spider\n3. Bat\n ")
+        robot_animal = input(f"Choose the animal you’d like {a.name}, to morph into:\n1. Wolf\n2. Spider\n3. Bat\n ")
         if(robot_animal == '1'):
             a.animal = "Wolf"
             print(wolf)
@@ -201,14 +202,13 @@ How cool would it be if {a.name} could morph into a scary animal?\n\n""")
         else:
             print("Enter a valid animal")
     print(f"You have chosen a {a.animal} to be the form of your robot's morphing ability.\n\n")
-    print(f"""It occurred to you that the only way you can reach your goal of taking over the world with your robot is to optimize a feature to make it even more powerful and deadly.
-    You have three options:\n\n""")
+    print(f"""\33[33mIt occurred to you that the only way you can reach your goal of taking over the world with your robot is to optimize a feature to make it even more powerful and deadly.
+
+    You have three options:\33[0m\n\n""")
     while(a.enhancement == None):
         robot_enhancement = input(f"""Which Enhancement do you choose for {a.name}?\n
 1.Enhanced Strength - this feature will give your robot immense physical power, allowing it to crush anything in its path.\n
-
 2.Advanced Intelligence - this feature will make your robot incredibly smart and strategic, allowing it to out-think and outmaneuver any human opponent.\n
-
 3.Tactical Weapon - this feature will give your robot a variety of deadly weapons, not limited to missiles, bombs, and laser guns, but also insanely corny jokes.\n""")
         if(robot_enhancement == '1'):
             print(hulk)
@@ -221,10 +221,10 @@ How cool would it be if {a.name} could morph into a scary animal?\n\n""")
             a.enhancement = "Funny"
         else:
             print("Enter a valid number")
-
+    input("PRESS `ENTER` TO CONTINUE ")
     for line in evil_robot_ending.split("\n"):
         print(line)
-        sleep(2)
+        sleep(1)
     print(f"Congratulations! You have created {a}.\n\n")
     sleep(2)
     print("Thanks for trying to dominate the world!\n\n")
